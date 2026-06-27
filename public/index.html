@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleven Sky</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <header class="top-bar">
+        <div class="logo">🌌 Eleven Sky</div>
+        <nav>
+            <a>Home</a>
+            <a>Privacy</a>
+            <a>Matching</a>
+            <a>Safety</a>
+        </nav>
+        <button onclick="startChat()" class="cta">Get Started</button>
+    </header>
+
+    <div class="hero">
+        <h1>Real-Time AI Conversations.<br>Beyond Boundaries.</h1>
+        <button onclick="startChat()" class="cta">Enter the Sky</button>
+    </div>
+
+    <div class="main" id="main-app">
+        <div class="video-container">
+            <video id="remoteVideo" autoplay playsinline></video>
+        </div>
+        <div class="bottom-bar">
+            <button onclick="toggleMute()">🎤</button>
+            <button onclick="toggleCamera()">📹</button>
+            <button onclick="applyFilter()">✨</button>
+            <button onclick="endCall()">✕</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
